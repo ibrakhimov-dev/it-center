@@ -1,0 +1,242 @@
+/** media 1440 px and 1200 px */
+@media screen and (max-width: 1440px) and (min-width: 1200.1px){
+    .courses-name-content .price h2{
+        font-size: 2rem;
+    }
+    .courses-name-content h2{
+        font-size: 1.5rem;
+    }
+    .technology h4{
+        font-size: 14px;
+    }
+}
+
+/** media 1200px and 992px */
+@media screen and (max-width: 1200px) and (min-width: 0px){
+    .banner-text h1{
+        font-size: 2rem;
+    }
+   .courses-name-content{
+    margin-top: 2rem;
+    width: 48%;
+   } 
+}
+
+/** meadi 992px and 776px */
+@media screen and (max-width: 992px) and (min-width: 0px){
+    .menu{
+        gap: 1rem;
+    }
+    .menu li{
+        font-size: 12px;
+    }
+    .courses-name-content .price h2{
+        font-size: 2rem;
+    }
+    .technology h4{
+        font-size: 14px;
+    }
+    .lesson-video iframe{
+        height: 400px;
+    }
+}
+
+/** meadi 776px and 576px */
+@media screen and (max-width: 776px) and (min-width: 0px){
+    .menu{
+        display: none;
+    }
+    .responsive-menu{
+        display: block;
+    }
+    .banner-text{
+        width: 100%;
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .banner-text h1{
+        font-size: 1.5rem;
+        margin: 0 auto;
+    }
+    .banner-text a{
+        margin: 0 auto;
+    }
+    .join-team{
+        margin-top: 1rem;
+    }
+    .banner-photo{
+        width: 100%;
+        order: -1;
+        display: flex;
+        justify-content: center;
+    }
+    .banner-photo img{
+        width: 70%;
+    }
+    .courses-title h1{
+        font-size: 2rem;
+    }
+    .courses-name-content h2{
+        font-size: 1rem;
+    }
+    .courses-name-content .price h2{
+        font-size: 1.5rem;
+    }
+    .courses-name-content .price p{
+        font-size: 13px;
+    }
+    .technology img{
+        width: 25px;
+    }
+    .technology h4{
+        font-size: 10.5px;
+    }
+    .courses-name-content {
+        height: 470px;
+    }
+    .join-courses-btn{
+        font-size: 12px;
+    }
+    .topics-title h1{
+        font-size: 2rem;
+    }
+    .mentor-title h1{
+        font-size: 2rem;
+    }
+    .mentor-photo{
+        width: 100%;
+    }
+    .mentor-name{
+        margin-top: 1rem;
+        width: 100%;
+    }
+    .mentor-name h1{
+        text-align: center;
+    }
+    .lesson-title h1{
+        font-size: 2rem;
+    }
+    .lesson-video iframe{
+        height: 300px;
+    }
+    .faq-title h1{
+        font-size: 2rem;
+    }
+    .contact-title h1{
+        font-size: 2rem;
+    }
+    .contact-photo{
+        width: 100%;
+    }
+    .contact-date{
+        margin-top: 1rem;
+        width: 100%;
+    }
+}
+
+/** media 576px and 380px */
+@media screen and (max-width: 576px) and (min-width: 0px){
+    .courses-name-content{
+        width: 100%;
+    }
+    .courses-name-content h2{
+        font-size: 1.5rem;
+    }
+    .courses-name-content .price h2{
+        font-size: 2rem;
+    }
+    .technology h4{
+        font-size: 14px;
+    }
+    .topics-list-btn{
+        font-size: 1rem;
+    }
+    .lesson-video iframe{
+        height: 250px;
+    }
+    .faq-list-btn{
+        font-size: 16px;
+    }
+    .courses-title h1{
+        font-size: 1.5rem;
+    }
+    .topics-title h1{
+        font-size: 1.5rem;
+    }
+    .mentor-title h1{
+        font-size: 1.5rem;
+    }
+    .lesson-title h1{
+        font-size: 1.5rem;
+    }
+    .faq-title h1{
+        font-size: 1.5rem;
+    }
+    .contact-title h1{
+        font-size: 1.5rem;
+    }
+}
+
+/** media 380px and 0px */
+@media screen and (max-width: 380px) and (min-width: 0px){
+    .courses-name-content h2{
+        font-size: 1rem;
+    }
+    .menu-phone{
+        width: 200px;
+    }
+    .banner-text h1{
+        font-size: 1.25rem;
+    }
+    .join-team{
+        font-size: 14px;
+    }
+    .courses-name-content .price h2{
+        font-size: 1rem;
+    }
+    .technology h4{
+        font-size: 10.5px;
+    }
+    .topics-list-btn{
+        font-size: 1rem;
+    }
+    .lesson-video iframe{
+        height: 250px;
+    }
+    .courses-title h1{
+        font-size: 1.25rem;
+    }
+    .topics-title h1{
+        font-size: 1.25rem;
+    }
+    .mentor-title h1{
+        font-size: 1.25rem;
+    }
+    .lesson-title h1{
+        font-size: 1.25rem;
+    }
+    .faq-title h1{
+        font-size: 1.25rem;
+    }
+    .lesson-title p{
+        font-size: 13px;
+    }
+    .mentor-name h1{
+        font-size: 1.5rem;
+    }
+    .contact-title h1{
+        font-size: 1.25rem;
+    }
+    .lesson-video iframe{
+        height: 200px;
+    }
+    .contact-telephon{
+        width: 100%;
+    }
+    .contact-profile{
+        width: 100%;
+    }
+    .faq-responsive{
+        width: 90%;
+    }
+}

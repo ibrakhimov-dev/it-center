@@ -1,0 +1,916 @@
+/** Font start */
+@font-face {
+    font-family: "Noto Sans";
+    src: url("../fonts/NotoSans-Regular.ttf") format(truetype);
+}
+
+/** Font end */
+
+/** Defoult style start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Noto Sans", sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(
+        45deg,
+        #8ce033b9,
+        #309a18b9
+    );
+    border-radius: 4px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/** Defoult style end */
+
+/** Header style start  */
+header{
+    width: 100%;
+    height: auto;
+}
+
+/** Nav style start */
+.navbar{
+    width: 100%;
+    height: 60px;
+}
+
+.container{
+    width: 87%;
+    margin: 0 auto;
+}
+
+.nav-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo{
+    width: 20%;
+    height: 100%;
+}
+
+.logo img{
+    width: 140px;
+}
+
+.navbar-menu{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu{
+    display: flex;
+    gap: 1.25rem;
+    justify-content: space-between;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: rgb(90, 90, 90);
+    position: relative;
+}
+
+.menu li a i{
+    color: rgb(0, 205, 0);
+}
+
+.menu li a:hover{   
+    color: black;
+}
+
+.menu li a:hover::after{
+    display: block;
+    animation: menu 0.5s ease-in-out forwards;
+}
+
+.menu li a::after{
+    position: absolute;
+    content: "";
+    background: rgb(0, 205, 0);
+    bottom: -5px;
+    border-radius: 2px;
+    left: 60%;
+    width: 0%;
+    height: 3px;
+    display: none;
+}
+
+@keyframes menu{
+    to{
+        width: 100%;
+        left: 0;
+    }
+}
+
+.responsive-menu{
+    display: none;
+    position: relative;
+    z-index: 1;
+
+}
+
+.menu-phone{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 250px;
+    background-color: black;
+    padding: 40px 0 20px;
+    border-radius: 5px;
+    z-index: -1;
+    display: none;
+}
+
+.click-btn-menu{
+    width: 40px;
+    outline: none;
+    height: 40px;
+    background-color: rgb(0, 205, 0);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 205, 0, 0.34);
+}
+
+.menu-phone li{
+    margin-top: 1rem;
+    list-style-type: none;
+    margin-left: 1rem;
+}
+
+.menu-phone li a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    position: relative;
+}
+
+.menu-phone li a i{
+    color: rgb(0, 205, 0);
+}
+
+.menu-phone li a:hover::after{
+    display: block;
+    animation: menu-phone 0.5s ease-in-out forwards;
+}
+
+.menu-phone li a::after{
+    position: absolute;
+    content: "";
+    background: rgb(0, 205, 0);
+    bottom: -5px;
+    border-radius: 2px;
+    left: 60%;
+    width: 0%;
+    height: 3px;
+    display: none;
+}
+
+@keyframes menu-phone{
+    to{
+        width: 150px;
+        left: 0;
+    }
+}
+
+/** Nav style end */
+
+/** Banner section style start */
+.banner{
+    width: 100%;
+    height: auto;
+}
+
+.banner-content{
+    padding: 3.5rem 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.banner-text{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.banner-text h1{
+    width: 90%;
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-shadow: 0 0 5px rgb(0, 205, 0, 0.5);
+}
+
+.join-team{
+    padding: 1rem 1rem;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    font-family: "Noto Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 0 5px 3px rgb(0, 205, 0, 0.7);
+}
+
+.text-green{
+    color: rgb(0, 205, 0);
+}
+
+.join-team:hover{
+    cursor: pointer;
+    background-color: rgb(0, 205, 0);
+    transition: 0.5s;
+}
+
+.banner-photo{
+    width: 50%;
+}
+
+.banner-photo img{
+    width: 100%;
+}
+
+/** Banner section style end */
+
+/** Header style end  */
+
+/** Main style start */
+main{
+    width: 100%;
+    height: auto;
+}
+
+/** Courses section style start */
+.courses{
+    width: 100%;
+    height: auto;
+}
+
+.courses-content{
+    width: 100%;
+    height: auto;
+}
+
+.courses-title{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 4px;
+}
+
+.courses-name{
+    width: 100%;
+    height: auto;
+    padding: 2rem 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+.courses-name-content{
+    width: 30%;
+    height: 576px;
+    position: relative;
+    box-shadow: 0 0 6px rgba(0, 205, 0, 0.615);
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+.courses-name-content h2{
+    text-align: center;
+}
+
+.courses-name-content h2 i{
+    color: rgb(0, 205, 0);
+}
+
+.line{
+    margin-top: 10px;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(0, 205, 0);
+}
+
+.price{
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    padding: 0 1rem;
+}
+
+.price h2{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.price p{
+    margin-top: 1.5rem;
+}
+
+.price h2 i{
+    color: rgb(255, 183, 0);
+}
+
+.technology{
+    width: 100%;
+    height: auto;
+    margin: 1.5rem 0;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+}
+
+.technology img{
+    width: 40px;
+}
+
+.technology h4 i{
+    color: rgb(0, 205, 0);
+}
+
+.technology-logo{
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.join-courses{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 1.5rem;
+    position: absolute;
+}
+
+.join-courses-btn{
+    text-align: center;
+    padding: 1rem 1rem;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    font-family: "Noto Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 0 5px 3px rgb(0, 205, 0, 0.7);
+}
+
+.join-courses-btn:hover{
+    cursor: pointer;
+    background-color: rgb(0, 205, 0);
+    transition: 0.5s;
+}
+
+.progress{
+    position: absolute;
+    margin: 0 auto;
+    height: 5px;
+    display: none;
+    bottom: -10px;
+    left: 1rem;
+    border-radius: 2px;
+}
+
+.progress-html{
+    background-color: orange;
+    width: 0;
+    animation: html 0.5s ease-in forwards;
+}
+
+@keyframes html{
+    to{
+        width: 17%; 
+    }
+}
+
+.progress-css{
+    background-color: rgb(21, 85, 248);
+    width: 0%;
+    animation: css 0.5s ease-in forwards;
+}
+
+@keyframes css{
+    to{
+        width: 34%; 
+    }
+}
+
+.progress-sass{
+    background-color: rgb(248, 21, 214);
+    width: 0%;
+    animation: html 0.5s ease-in forwards;
+}
+
+.progress-js{
+    background-color: rgb(248, 237, 21);
+    width: 0%;
+    animation: css 0.5s ease-in forwards;
+}
+
+.progress-komp{
+    background-color: rgb(255, 162, 0);
+    width: 0%;
+    animation: komp 0.5s ease-in forwards;
+}
+
+.progress-word{
+    background-color: rgb(21, 146, 248);
+    width: 0%;
+    animation: komp 0.5s ease-in forwards;
+}
+
+.progress-excel{
+    background-color: rgb(21, 248, 108);
+    width: 0%;
+    animation: komp 0.5s ease-in forwards;
+}
+
+.progress-power-point{
+    background-color: rgb(248, 21, 74);
+    width: 0%;
+    animation: komp 0.5s ease-in forwards;
+}
+
+@keyframes komp{
+    to{
+        width: 25%;
+    }
+}
+
+.progress-react{
+    background-color: rgb(31, 1, 180);
+    width: 0%;
+    animation: react 0.5s ease-in forwards;
+}
+
+.progress-redux{
+    background-color: rgb(138, 1, 180);
+    width: 0%;
+    animation: redux 0.5s ease-in forwards;
+}
+
+.progress-rsschool{
+    background-color: rgb(234, 245, 16);
+    width: 0%;
+    animation: rsschool 0.5s ease-in forwards;
+}
+
+@keyframes react{
+    to{
+        width: 66%;
+    }
+}
+
+@keyframes redux{
+    to{
+        width: 33%;
+    }
+}
+
+@keyframes rsschool{
+    to{
+        width: 92%;
+    }
+}
+.courses-name-content:hover{
+    box-shadow: 0 0 10px rgb(0, 205, 0);
+    transition: 0.4s;
+}
+
+.courses-name-content:hover .progress{
+    display: block;
+}
+
+/** Courses section style end */
+
+/** Topics section style start */
+.topics{
+    width: 100%;
+    height: auto;
+}
+
+.topics-content{
+    width: 100%;
+    height: auto;
+}
+
+.topics-title{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 4px;
+}
+
+.topics-list{
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+}
+
+.topics-list-btn{
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    padding: 15px 10px;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+    background-color: transparent;
+    margin: 1rem 0 0;
+    text-align: left;
+    outline: none;
+    border: 1px solid rgb(0, 205, 0);
+    border-radius: 5px;
+}
+.topics-list-btn.active{
+    background-color: rgba(84, 250, 123, 0.648);
+}
+
+.topics-list-content{
+    display: none;
+    padding: 1rem;
+    width: 100%;
+    border-right: 1px solid rgb(0, 205, 0);
+    border-left: 1px solid rgb(0, 205, 0);
+    border-bottom: 1px solid rgb(0, 205, 0);
+    border-radius: 0 0 5px 5px;
+}
+
+.topics-list-content h2{
+    margin-top: 1rem;
+}
+
+.topics-list-content ol{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.topics-list-open{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+/** Topics section style end */
+
+/** Mentor section style start */
+.mentor{
+    width: 100%;
+    height: auto;
+}
+
+.mentor-content{
+    width: 100%;
+    height: auto;
+}
+
+.mentor-title{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0;
+    letter-spacing: 4px;
+}
+
+.mentor-user{
+    margin: 2rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mentor-photo{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mentor-photo img{
+    width: 60%;
+    border-radius: 100%;
+}
+.mentor-name{
+    width: 50%;
+}
+
+.mentor-name h1{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.mentor-name p {
+    margin-top: 0.75rem;
+}
+.mentor-name p span{
+    color: rgb(0, 205, 0);
+    font-weight: bold;
+}
+
+.btn-profile{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 1.25rem;
+    color: white;
+    border-radius: 100%;
+    margin-right: 8px;
+}
+
+.mentor-profile{
+    margin-top: 30px;
+}
+
+.mentor-profile p{
+    margin-bottom: 10px;
+}
+.mentor-profile a{
+    text-decoration: none;
+}
+
+.telegramm{
+    background-color: rgb(27, 140, 233);
+}
+
+.instagramm{
+    background-color: rgb(233, 27, 212);
+}
+
+.youtube{
+    background-color: rgb(233, 27, 27);
+}
+
+/** Mentor section style end */
+
+/** Lesson section style start */
+.lesson{
+    width: 100%;
+    height: auto;
+}
+
+.lesson-content{
+    width: 100%;
+    height: auto;
+}
+
+.lesson-title{
+    width: 100%;
+    height: auto;
+    font-size: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.lesson-title h1{
+    letter-spacing: 4px;
+}
+
+.lesson-title p{
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
+.lesson-video{
+    width: 100%;
+    height: auto;
+    margin: 2rem 0;
+}
+
+.lesson-video iframe{
+    width: 100%;
+    height: 640px;
+    border-radius: 10px;
+}
+/** Lesson section style end */
+
+/** Faq section style start  */
+.faq{
+    width: 100%;
+    height: auto;
+}
+
+.faq-content{
+    width: 100%;
+    height: auto;
+}
+
+.faq-title{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 4px;
+}
+
+.faq-list{
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+}
+
+.faq-list-btn{
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    padding: 15px 10px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.25rem;
+    background-color: transparent;
+    margin: 1rem 0 0;
+    text-align: left;
+    outline: none;
+    border: 1px solid rgb(0, 205, 0);
+    border-radius: 5px;
+}
+.faq-responsive{
+    display: block;
+    width: 90%;
+}
+.faq-list-btn.active{
+    background-color: rgba(84, 250, 123, 0.648);
+}
+
+.faq-list-content{
+    display: none;
+    padding: 1rem;
+    width: 100%;
+    border-right: 1px solid rgb(0, 205, 0);
+    border-left: 1px solid rgb(0, 205, 0);
+    border-bottom: 1px solid rgb(0, 205, 0);
+    border-radius: 0 0 5px 5px;
+}
+
+.faq-list-content h2{
+    margin-top: 1rem;
+}
+
+.faq-list-content p{
+    margin-top: 1rem;
+}
+
+.faq-list-open{
+    position: absolute;
+    right: 10px;
+    top: 40%;
+}
+/** Faq section style end  */
+
+/** Contact section style start  */
+.contact{
+    width: 100%;
+    height: auto;
+}
+
+.contact-content{
+    width: 100%;
+    height: auto;
+}
+
+.contact-title{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 4px;
+}
+
+.contact-wrapper{
+    margin: 2rem 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-photo{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-photo img{
+    width: 60%;
+}
+
+.contact-date{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-telephon{
+    padding: 10px;
+    width: 50%;
+}
+
+.contact-profile{
+    padding: 10px;
+    width: 50%;
+}
+
+.contact-telephon i{
+    color: rgb(0, 205, 0);
+}
+
+.contact-telephon i{
+    margin-top: 1rem;
+}
+
+.contact-telephon h3{
+    margin-top: 1rem;
+}
+
+.contact-profile h3{
+    margin-top: 1rem;
+}
+
+.contact-profile a {
+    display: block;
+    text-decoration: none;
+    margin-top: 1rem;
+    color: black;
+}
+
+.contact-profile a:hover{
+    color: rgb(0, 205, 0);
+}
+
+.contact-telegramm{
+    color: rgb(21, 146, 248);
+}
+
+.contact-instagramm{
+    color: rgb(233, 27, 212);
+}
+
+.contact-youtube{
+    color: rgb(233, 27, 27);
+}
+
+.contact-github{
+    color: rgb(138, 1, 180);
+}
+/** Contact section style end */
+
+/** Main style end */
+
+/** Footer style start */
+footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content{
+    width: 100%;
+    height: auto;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 205, 0);
+}
+/** Footer style end */
